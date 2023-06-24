@@ -7,15 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="try.css">
 
-
-
-
-
-
-
-
-
-
     <style>
 
 
@@ -26,6 +17,7 @@
 
 }
 html{
+  background: #E4EBF5;
   overflow-x: hidden;
   /* overflow-y: hidden; */
 }
@@ -42,12 +34,15 @@ html{
     /* background-color: rgba(255, 255, 255, 0.8); */
     text-align: center;
 
-    font-size: 30px;
+    /* font-size: 30px; */
    
     
   }
   
   .left{
+    height:inherit;
+    top:0;
+    left:0;
     position: sticky;
     display: grid;
     grid-template-rows: 25% auto;
@@ -81,16 +76,26 @@ html{
   }
 
   .upper{
+    /* height:20%; */
     display:grid;
-    grid-template-rows: 50% 20% auto;
+    grid-template-rows: 40% auto;
     /* gap: 1px; */
     /* background-color: #2196F3; */
-    position: sticky;
+    top:0;
+    /* position: sticky; */
+    height: fit-content;
   }
-
+.about_ecell{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:0 0 5px 0;
+}
   .ecell_logo img{
     width: 236.505px;
     height: 53px;
+   
   }
   .about_ecell h5{
     font-size: 15px;
@@ -98,12 +103,10 @@ html{
   .lower{
     display: grid;
     grid-template-columns: auto auto auto;
-    /* gap: 1px; */
-    /* background-color: #2196F3; */
-    row-gap:25px;
-    column-gap:25px;
-   justify-content:  space-between;
-   padding:10px 30px 15px 30px;
+    row-gap:30px;
+    column-gap:35px;
+   justify-content:  space-around;
+   padding:10px 50px 15px 40px;
     
   }
 
@@ -112,14 +115,14 @@ html{
     align-content: space-around;
     display:grid;
     grid-template-rows:25% 50% 25%;
-    /* gap: 1px; */
-    /* background-color: #2196F3; */
-    /* width: 248px;
-    height: 230px; */
     border-radius: 11px;
     background: linear-gradient(162deg, rgba(44, 43, 43, 0.52) 0%, rgba(199, 199, 199, 0.62) 100%);
     box-shadow: 0px 4px 29px 4px rgba(0, 0, 0, 0.25) inset;
    
+  }
+
+  .reg_tabs:hover{
+    
   }
 
 
@@ -150,7 +153,7 @@ html{
     height: 21px;
     flex-shrink: 0;
     border-radius: 20px;
-    transition-delay: .5s;
+    transition-delay: .5s ease;
     background: linear-gradient(180deg, #FEE 0%, rgba(117, 106, 106, 0.00) 91.67%);
   }
 
@@ -160,39 +163,32 @@ html{
     
     }
 
-    /* @media only screen and (max-width: 1050px) {
-      .reg_log{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-      }
-      
-    }
-
-    @media only screen and (max-width: 915px){
-      .tab_content{
-        display:none;
-      }
-      .reg_log{
-        display: flex;
-        flex-direction: column;
-        justify-content:end;
-      }
-
-    } */
-
-
     @media only screen and (max-width: 1050px){
+ 
+        .grid_1{
+            display:flex;
+        }
       .lower{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns:auto;
+        /* flex-direction: column; */
+        /* flex-shrink: 0; */
+
+        align-items:center;
+        justify-content:space-around;
+
       }
-      /* .left{
-        display:none;
+      .left{
+        display: none;
+        left:0;
+       position: sticky;
+      }
+      /* .upper{
+        top:0;
+        position: sticky;
+        background: #4A4A4A;
       } */
-      .upper{
-        position: -webkit-sticky;
-      }
+      
     }
     </style>
 
@@ -215,16 +211,18 @@ html{
                 <div class="upper_parts ecell_logo child">
                     <img src="./assets/Ecell Logos/Copy of E-Cell Logo (Black).png" alt="">
                 </div>
-                <div class="upper_parts about_ecell child">
+                <div class="about_ecell">
                     <h5> e cell is India’s largest student run non profittable organistion which was founded with a
                         vision to create an entrepreneuring India
+                       
                     </h5>
+                    <button class="btn">visit website</button>
                 </div>
-                <div class="upper_parts ecell_read_more child">
+                <!-- <div class="upper_parts ecell_read_more child">
                     <div class="child">
-                        <button class="btn">visit website</button>
+                        
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="child lower">
                 <div class="reg_tabs child">
