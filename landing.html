@@ -117,10 +117,10 @@
             padding: 1rem;
         }
 
-        .reg_tabs:hover {}
-
-
-        .tab_content {}
+        button.register-btn {
+            color: black;
+            background-color: white;
+        }
 
         .tab_content p {
             color: white;
@@ -167,13 +167,9 @@
 
             .lower {
                 display: grid;
-                grid-template-columns: auto;
-                /* flex-direction: column; */
-                /* flex-shrink: 0; */
-
+                grid-template-columns: auto auto;
                 align-items: center;
                 justify-content: space-around;
-
             }
 
             .left {
@@ -185,13 +181,12 @@
             .upper {
                 margin: 1rem;
             }
+        }
 
-            /* .upper{
-        top:0;
-        position: sticky;
-        background: #4A4A4A;
-      } */
-
+        @media screen and (max-width: 600px) {
+            .lower {
+                grid-template-columns: auto;
+            }
         }
 
         @media screen and (max-width: 1180px) {
@@ -252,7 +247,7 @@ height: 48px;" src="./assets/Ecell Logos/Copy of Empresario Logo.png" alt="">
                     </div>
                     <div class="child reg_log">
                         <div class="child reg">
-                            <button class="btn">Register</button>
+                            <button class="btn register-btn">Register</button>
                         </div>
                         <div class="child log">
                             <button class="btn">Login</button>
@@ -274,7 +269,7 @@ height: 48px;" src="./assets/Ecell Logos/Copy of EAD Logo (Colour) Cropped.png" 
                     </div>
                     <div class="child reg_log">
                         <div class="child reg">
-                            <button class="btn">Register</button>
+                            <button class="btn register-btn">Register</button>
                         </div>
                         <div class="child log">
                             <button class="btn">Login</button>
@@ -299,7 +294,7 @@ height: 48px;" src="./assets/Ecell Logos/Copy of GES Logo (Black).png" alt="">
 
                     <div class="child reg_log">
                         <div class="child reg">
-                            <button class="btn">Register</button>
+                            <button class="btn register-btn">Register</button>
                         </div>
                         <div class="child log">
                             <button class="btn">Login</button>
@@ -321,7 +316,7 @@ height: 48px;" src="./assets/Ecell Logos/Copy of LSM Logo (Colour).png" alt="">
                     </div>
                     <div class="child reg_log">
                         <div class="child reg">
-                            <button class="btn">Register</button>
+                            <button class="btn register-btn">Register</button>
                         </div>
                         <div class="child log">
                             <button class="btn">Login</button>
@@ -343,7 +338,7 @@ height: 48px;" src="./assets/Ecell Logos/Copy of Million at Stake.png" alt="">
                     </div>
                     <div class="child reg_log">
                         <div class="child reg">
-                            <button class="btn">Register</button>
+                            <button class="btn register-btn">Register</button>
                         </div>
                         <div class="child log">
                             <button class="btn">Login</button>
@@ -365,7 +360,7 @@ height: 48px;" src="./assets/Ecell Logos/Copy of Empresario Logo.png" alt="">
                     </div>
                     <div class="child reg_log">
                         <div class="child reg">
-                            <button class="btn">Register</button>
+                            <button class="btn register-btn">Register</button>
                         </div>
                         <div class="child log">
                             <button class="btn">Login</button>
