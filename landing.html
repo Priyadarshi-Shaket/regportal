@@ -5,191 +5,200 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="try.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 
     <style>
-
-
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-html{
-  background: #E4EBF5;
-  overflow-x: hidden;
-  /* overflow-y: hidden; */
-}
-.grid_1 {
-    height:100vh;
-    width:100%;
-    display: grid;
-    grid-template-columns: 20% auto;
-    /* gap: 1px; */
-    /* background-color: #2196F3; */
-}
-
-  .child{
-    /* background-color: rgba(255, 255, 255, 0.8); */
-    text-align: center;
-
-    /* font-size: 30px; */
-   
-    
-  }
-  
-  .left{
-    height:inherit;
-    top:0;
-    left:0;
-    position: sticky;
-    display: grid;
-    grid-template-rows: 25% auto;
-    /* gap: 1px; */
-    background: rgba(0, 0, 0, 0.85);
-
-  }
-  .left .side_logo{
-    margin-top:30px;
-  }
-  .left .side_logo img{
-    position: sticky;
-    /* width: 110px;
-    height: 93px; */
-    width:fit-content;
-    height: 93px
-  }
-.side_content{
-  display:flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-}
-  .right{
-    /* height:100vh; */
-    display:grid;
-    grid-template-rows: 20% auto;
-    /* gap: 1px; */
-    /* background-color: #2196F3; */
-
-  }
-
-  .upper{
-    /* height:20%; */
-    display:grid;
-    grid-template-rows: 40% auto;
-    /* gap: 1px; */
-    /* background-color: #2196F3; */
-    top:0;
-    /* position: sticky; */
-    height: fit-content;
-  }
-.about_ecell{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding:0 0 5px 0;
-}
-  .ecell_logo img{
-    width: 236.505px;
-    height: 53px;
-   
-  }
-  .about_ecell h5{
-    font-size: 15px;
-  }
-  .lower{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    row-gap:30px;
-    column-gap:35px;
-   justify-content:  space-around;
-   padding:10px 50px 15px 40px;
-    
-  }
-
-  .reg_tabs{
-
-    align-content: space-around;
-    display:grid;
-    grid-template-rows:25% 50% 25%;
-    border-radius: 11px;
-    background: linear-gradient(162deg, rgba(44, 43, 43, 0.52) 0%, rgba(199, 199, 199, 0.62) 100%);
-    box-shadow: 0px 4px 29px 4px rgba(0, 0, 0, 0.25) inset;
-   
-  }
-
-  .reg_tabs:hover{
-    
-  }
-
-
-.tab_content{
- 
-}
-  .tab_content p{
-    color: #000;
-    text-align: center;
-    font-size: 10px;
-    font-family: Montserrat;
-    line-height: 219.523%;
-    letter-spacing: 0.78px;
-  }
-
-
-  .reg_log{
-    display:flex;
-    
-    align-items: center;
-    justify-content:space-around;
-  }
-
-  .btn{
-    border-color: rgb(238, 237, 237);
-    margin-top: 10px;
-    width: 109px;
-    height: 21px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    transition-delay: .5s ease;
-    background: linear-gradient(180deg, #FEE 0%, rgba(117, 106, 106, 0.00) 91.67%);
-  }
-
-  .btn:hover {
-    
-    background: linear-gradient(180deg, #4A4A4A 0%, rgba(117, 106, 106, 0.00) 91.67%);
-    
-    }
-
-    @media only screen and (max-width: 1050px){
- 
-        .grid_1{
-            display:flex;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            color: white;
         }
-      .lower{
-        display: grid;
-        grid-template-columns:auto;
-        /* flex-direction: column; */
-        /* flex-shrink: 0; */
 
-        align-items:center;
-        justify-content:space-around;
+        html {
+            background: #202020;
+            overflow-x: hidden;
+        }
 
-      }
-      .left{
-        display: none;
-        left:0;
-       position: sticky;
-      }
-      /* .upper{
+        .grid_1 {
+            /* height: 100vh; */
+            width: 100%;
+            display: grid;
+            grid-template-columns: 20% auto;
+        }
+
+        .child {
+            text-align: center;
+        }
+
+        .left {
+            height: 100vh;
+            top: 0;
+            left: 0;
+            position: sticky;
+            display: grid;
+            grid-template-rows: 25% auto;
+            /* gap: 1px; */
+            background: black;
+
+        }
+
+        .left .side_logo {
+            margin-top: 30px;
+        }
+
+        .left .side_logo img {
+            position: sticky;
+            /* width: 110px;
+    height: 93px; */
+            width: fit-content;
+            height: 93px
+        }
+
+        .side_content {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.7rem;
+            font-weight: 600;
+            line-height: 1.7;
+            letter-spacing: 0.2rem;
+        }
+
+        .right {
+            /* height:100vh; */
+            display: grid;
+            grid-template-rows: 20% auto;
+            padding: 1rem;
+            /* gap: 1px; */
+            /* background-color: #2196F3; */
+
+        }
+
+        .about_ecell {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 0 0 5px 0;
+        }
+
+        .ecell_logo img {
+            width: 236.505px;
+            height: 53px;
+
+        }
+
+        .about_ecell h5 {
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        .lower {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            row-gap: 30px;
+            column-gap: 35px;
+            justify-content: space-around;
+            padding: 10px 50px 15px 40px;
+
+        }
+
+        .reg_tabs {
+            background-color: black;
+            border-radius: 15px;
+            padding: 1rem;
+        }
+
+        .reg_tabs:hover {}
+
+
+        .tab_content {}
+
+        .tab_content p {
+            color: white;
+            text-align: center;
+            font-size: 10px;
+            line-height: 219.523%;
+            letter-spacing: 0.78px;
+        }
+
+
+        .reg_log {
+            display: flex;
+
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .btn {
+            border: 3px solid white;
+            margin-top: 10px;
+            /* width: 109px; */
+            padding: 0.5rem 1rem;
+            min-width: 5rem;
+            /* height: 3rem; */
+            flex-shrink: 0;
+            transition-delay: .5s ease;
+            background: black;
+            transition: scale 0.1s linear, color 0.1s linear, background-color 0.1s linear;
+            cursor: pointer;
+            font-weight: 500;
+        }
+
+        .btn:hover {
+            scale: 1.1;
+            color: black;
+            background-color: white;
+        }
+
+        @media only screen and (max-width: 1050px) {
+
+            .grid_1 {
+                display: flex;
+            }
+
+            .lower {
+                display: grid;
+                grid-template-columns: auto;
+                /* flex-direction: column; */
+                /* flex-shrink: 0; */
+
+                align-items: center;
+                justify-content: space-around;
+
+            }
+
+            .left {
+                display: none;
+                left: 0;
+                position: sticky;
+            }
+            
+            .upper {
+                margin: 1rem;
+            }
+
+            /* .upper{
         top:0;
         position: sticky;
         background: #4A4A4A;
       } */
-      
-    }
+
+        }
+
+        @media screen and (max-width: 1180px) {
+            .side_content {
+                letter-spacing: 0.07rem;
+            }
+        }
     </style>
 
 
@@ -202,8 +211,8 @@ html{
             <div class="child side_logo">
                 <img src="./assets/Ecell Logos/ecell sidebar logo.png" alt="">
             </div>
-            <div  class="child side_content">
-                REG PORTAL
+            <div class="child side_content">
+                REGISTRATION PORTAL
             </div>
         </div>
         <div class="right child">
@@ -212,11 +221,14 @@ html{
                     <img src="./assets/Ecell Logos/Copy of E-Cell Logo (Black).png" alt="">
                 </div>
                 <div class="about_ecell">
-                    <h5> e cell is India’s largest student run non profittable organistion which was founded with a
+                    <h5> Entrepreneurship Cell is India’s largest student run non-profittable organistion which was founded with a
                         vision to create an entrepreneuring India
-                       
+
                     </h5>
-                    <button class="btn">visit website</button>
+                    <button class="btn">More Info <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                      </svg></button>
                 </div>
                 <!-- <div class="upper_parts ecell_read_more child">
                     <div class="child">
@@ -233,14 +245,17 @@ height: 48px;" src="./assets/Ecell Logos/Copy of Empresario Logo.png" alt="">
                     <div class="child tab_content">
                         <p>Empresario. An annual business model competition organized by Entrepreneurship Cell, IIT
                             Kharagpur in association with International Business Model Competition</p>
-                            <button class="btn">visit website</button>
+                        <button class="btn">More Info <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                      </svg></button>
                     </div>
                     <div class="child reg_log">
                         <div class="child reg">
-                            <button class="btn">register</button>
+                            <button class="btn">Register</button>
                         </div>
                         <div class="child log">
-                            <button class="btn">login</button>
+                            <button class="btn">Login</button>
                         </div>
                     </div>
                 </div>
@@ -252,14 +267,17 @@ height: 48px;" src="./assets/Ecell Logos/Copy of EAD Logo (Colour) Cropped.png" 
                     <div class="child tab_content">
                         <p>Empresario. An annual business model competition organized by Entrepreneurship Cell, IIT
                             Kharagpur in association with International Business Model Competition</p>
-                            <button class="btn">visit website</button>
+                        <button class="btn">More Info <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                      </svg></button>
                     </div>
                     <div class="child reg_log">
                         <div class="child reg">
-                            <button class="btn">register</button>
+                            <button class="btn">Register</button>
                         </div>
                         <div class="child log">
-                            <button class="btn">login</button>
+                            <button class="btn">Login</button>
                         </div>
                     </div>
                 </div>
@@ -271,17 +289,20 @@ height: 48px;" src="./assets/Ecell Logos/Copy of GES Logo (Black).png" alt="">
                     <div class="child tab_content">
                         <p>Empresario. An annual business model competition organized by Entrepreneurship Cell, IIT
                             Kharagpur in association with International Business Model Competition</p>
-                            <button class="btn">visit website</button>
+                        <button class="btn">More Info <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                      </svg></button>
                     </div>
-                    
-                        
-                    
+
+
+
                     <div class="child reg_log">
                         <div class="child reg">
-                            <button class="btn">register</button>
+                            <button class="btn">Register</button>
                         </div>
                         <div class="child log">
-                            <button class="btn">login</button>
+                            <button class="btn">Login</button>
                         </div>
                     </div>
                 </div>
@@ -293,14 +314,17 @@ height: 48px;" src="./assets/Ecell Logos/Copy of LSM Logo (Colour).png" alt="">
                     <div class="child tab_content">
                         <p>Empresario. An annual business model competition organized by Entrepreneurship Cell, IIT
                             Kharagpur in association with International Business Model Competition</p>
-                            <button class="btn">visit website</button>
+                        <button class="btn">More Info <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                      </svg></button>
                     </div>
                     <div class="child reg_log">
                         <div class="child reg">
-                            <button class="btn">register</button>
+                            <button class="btn">Register</button>
                         </div>
                         <div class="child log">
-                            <button class="btn">login</button>
+                            <button class="btn">Login</button>
                         </div>
                     </div>
                 </div>
@@ -312,14 +336,17 @@ height: 48px;" src="./assets/Ecell Logos/Copy of Million at Stake.png" alt="">
                     <div class="child tab_content">
                         <p>Empresario. An annual business model competition organized by Entrepreneurship Cell, IIT
                             Kharagpur in association with International Business Model Competition</p>
-                            <button class="btn">visit website</button>
+                        <button class="btn">More Info <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                      </svg></button>
                     </div>
                     <div class="child reg_log">
                         <div class="child reg">
-                            <button class="btn">register</button>
+                            <button class="btn">Register</button>
                         </div>
                         <div class="child log">
-                            <button class="btn">login</button>
+                            <button class="btn">Login</button>
                         </div>
                     </div>
                 </div>
@@ -331,14 +358,17 @@ height: 48px;" src="./assets/Ecell Logos/Copy of Empresario Logo.png" alt="">
                     <div class="child tab_content">
                         <p>Empresario. An annual business model competition organized by Entrepreneurship Cell, IIT
                             Kharagpur in association with International Business Model Competition</p>
-                            <button class="btn">visit website</button>
+                        <button class="btn">More Info <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+                      </svg></button>
                     </div>
                     <div class="child reg_log">
                         <div class="child reg">
-                            <button class="btn">register</button>
+                            <button class="btn">Register</button>
                         </div>
                         <div class="child log">
-                            <button class="btn">login</button>
+                            <button class="btn">Login</button>
                         </div>
                     </div>
                 </div>
