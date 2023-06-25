@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,171 +8,210 @@
     <link rel="stylesheet" href="logn.css">
     <style>
         * {
-    margin: 0;
-    padding: 0;
+            margin: 0;
+            padding: 0;
 
-}
+        }
 
-.login {
-    overflow: hidden;
-    height: 100vh;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 20% auto;
-}
+        body {
+            background-color: #E4EBF5;
+        }
 
-.left { height: 100vh;
-    background: black;
-}
+        .login {
+            overflow: hidden;
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 20% auto;
+        }
 
-.right {
-    max-height: 100vh;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    background: #E4EBF5;
+        .left {
+            height: 100vh;
+            top: 0;
+            left: 0;
+            position: sticky;
+            display: grid;
+            grid-template-rows: 25% auto;
+            /* gap: 1px; */
+            background: rgba(0, 0, 0, 0.85);
+        }
 
-} 
-.ecell_logo img {
-    width: 236.505px;
-    height: 53px;
-    margin-left:70px;
+        .right {
+            max-height: 100vh;
+            display: grid;
+            grid-template-rows: auto auto;
+            align-items: center;
+            justify-content: center;
+            background: #E4EBF5;
 
-}
+        }
 
-.content{
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-}
+        .ecell_logo{
+            display:flex;
+            align-content: center;
+            justify-content: center;
+        }
+        .ecell_logo img {
+            width: 260.505px;
+            height: 53px;
+            margin-left: 8px;
 
-.login_tab {
-    padding: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 11px;
-    background: linear-gradient(162deg, rgba(44, 43, 43, 0.52) 0%, rgba(199, 199, 199, 0.62) 100%);
-    box-shadow: 0px 4px 29px 4px rgba(0, 0, 0, 0.25) inset;
-}
+        }
 
-.fields {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+        .content {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
 
-}
+        .login_tab {
+            padding: 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 11px;
+            background: linear-gradient(162deg, rgba(44, 43, 43, 0.52) 0%, rgba(199, 199, 199, 0.62) 100%);
+            box-shadow: 0px 4px 29px 4px rgba(0, 0, 0, 0.25) inset;
+        }
 
-.input-field {
-    /* display:flex;
+        .fields {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .input-field {
+            width:250px;
+            /* display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; */
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-    flex-direction: column;
-    font-size: 1rem;
-    font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            flex-direction: column;
+            font-size: 1rem;
+            font-weight: 600;
 
-}
+        }
 
-.input-field label {
-    font-size: 13px;
-}
-
-
-.fields input,
-.fields select {
-    padding: 0.8rem;
-    border-radius: 7px;
-    border: none;
-    box-shadow: none;
-    background: rgba(255, 255, 255, 0.25);
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
-
-}
-.submit{
-    margin-top: 50px;
-    border-color: rgb(238, 237, 237);
-    width: 109px;
-    height: 21px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    transition-delay: .5s ease;
-    background: linear-gradient(180deg, #FEE 0%, rgba(117, 106, 106, 0.00) 91.67%);
-    
-    
-}
-
-.submit:hover {
-    scale: 1.1;
-   background: black;
-   color:white;
-    /* background-color: white; */
-}
+        .input-field label {
+            font-size: 13px;
+        }
 
 
-.child {
-    text-align: center;
-}
+        .fields input,
+        .fields select {
+            padding: 0.8rem;
+            border-radius: 7px;
+            border: none;
+            box-shadow: none;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
 
-.left {
-    height: 100vh;
-    top: 0;
-    left: 0;
-    position: sticky;
-    display: grid;
-    grid-template-rows: 25% auto;
-    /* gap: 1px; */
-    background: rgba(0, 0, 0, 0.85);
+        }
+
+        .submit {
+            margin-top: 50px;
+            border-color: rgb(238, 237, 237);
+            width: 109px;
+            height: 21px;
+            flex-shrink: 0;
+            border-radius: 20px;
+            transition-delay: .5s ease;
+            background: linear-gradient(180deg, #FEE 0%, rgba(117, 106, 106, 0.00) 91.67%);
 
 
-}
+        }
 
-.left .side_logo {
-    margin-top: 30px;
-}
+        .submit:hover {
+            scale: 1.1;
+            background: black;
+            color: white;
+            /* background-color: white; */
+        }
 
-.left .side_logo img {
-    position: sticky;
-    /* width: 110px;
+
+        .child {
+            text-align: center;
+        }
+
+        .left {
+            height: 100vh;
+            top: 0;
+            left: 0;
+            position: sticky;
+            display: grid;
+            grid-template-rows: 25% auto;
+            /* gap: 1px; */
+            background: rgba(0, 0, 0, 0.85);
+
+
+        }
+
+        .left .side_logo {
+            margin-top: 30px;
+        }
+
+        .left .side_logo img {
+            position: sticky;
+            /* width: 110px;
 height: 93px; */
-    width: fit-content;
-    height: 93px
-}
+            width: fit-content;
+            height: 93px
+        }
 
-.side_content {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    color: white;
-    font-size: 1.7rem;
-    font-weight: 600;
-    line-height: 1.7;
-    letter-spacing: 0.2rem;
-}
+        .side_content {
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.7rem;
+            font-weight: 600;
+            line-height: 1.7;
+            letter-spacing: 0.2rem;
+        }
 
 
-  @media only screen and (max-width: 800px){
-    .left{
-        display: none;
-    }
-  }
+        @media only screen and (max-width: 800px) {
+            .login {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                /* padding:100px 0 0 0 ; */
+                /* gap:10px; */
+            }
+
+            .login_tab {
+                padding: 50px;
+            }
+
+            .right {
+                row-gap: 30px;
+                ;
+            }
+
+            .left {
+                display: none;
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="login">
         <div class="left">
             <div class="child side_logo">
                 <img src="./ecell sidebar logo.png" alt="">
             </div>
-            <div  style="color:white;" class="child side_content">
+            <div style="color:white;" class="child side_content">
                 <br><br><br><br>
-              LOGIN <br><br><br><br><br><br><br><br><br>
+                LOGIN <br><br><br><br><br><br><br><br><br>
             </div>
         </div>
         <div class="right">
@@ -182,26 +222,25 @@ height: 93px; */
                 <div class="content">login</div>
                 <div class="inputs">
                     <form action="" method="POST">
-                   
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>Gmail</label>
-                            <input type="text" name="username"
-                                placeholder="Enter your Gmail Id" required>
+
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Gmail</label>
+                                <input type="text" name="username" placeholder="Enter your Gmail Id" required>
+                            </div>
+                            <div class="input-field">
+                                <label>password</label>
+                                <input type="text" name="username" placeholder="Enter your Username" required>
+                            </div>
                         </div>
-                        <div class="input-field">
-                            <label>password</label>
-                            <input type="text" name="username"
-                                placeholder="Enter your Username" required>
-                        </div>
-                    </div>
                     </form>
                 </div>
                 <button class="submit" type="submit">Submit</button>
-                
-                </div>
+
             </div>
         </div>
     </div>
+    </div>
 </body>
+
 </html>
